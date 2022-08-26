@@ -172,7 +172,7 @@ button.about.btn.pointer:hover {
 
 /* header.js / home.js */
 .home__bg {
-  background-image: url(../public/img/bg.jpg);
+  background-image: url(/img/bg.jpg);
   background-color: #010101;
   background-position: 50%;
   background-repeat: no-repeat;
