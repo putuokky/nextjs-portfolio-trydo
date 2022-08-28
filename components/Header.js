@@ -18,6 +18,9 @@ export default function Header() {
               <a href='#Services'>
                 <li className='nav__items mx__15'>Services</li>
               </a>
+              <a href='#Portfolio'>
+                <li className='nav__items mx__15'>Portfolio</li>
+              </a>
               <a href='#Blog'>
                 <li className='nav__items mx__15'>Blog</li>
               </a>
@@ -37,6 +40,12 @@ export default function Header() {
               <h2 className="home__text pz__10">
                 Hi,I'm John Doe
               </h2>
+              <h3 className="home__text sweet pz__10">
+                JS Developer
+              </h3>
+              <h4 className="home__text pz__10">
+                based in USA
+              </h4>
             </div>
           </div>
         </div>

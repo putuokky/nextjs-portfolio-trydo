@@ -197,4 +197,11 @@ h2.home__text {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
+h3,
+h4.home__text {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+}
 /* end header.js / home.js */
