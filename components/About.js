@@ -1,3 +1,5 @@
+import Image from "next/image";
+import about from '../public/img/about.jpg'
 
 export default function About() {
   return (
@@ -5,7 +7,7 @@ export default function About() {
       <div className="container">
         <div className="row">
           <div className="col__2">
-            <img src="/img/about.jpg" alt="" className="about__img" />
+            <Image src={about} alt="" className="about__img" />
           </div>
           <div className="col__2">
             <h1 className="about__heading">

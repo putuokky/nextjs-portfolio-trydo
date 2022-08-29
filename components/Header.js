@@ -1,3 +1,5 @@
+import Image from "next/image";
+import logo from "../public/img/logo.png";
 
 export default function Header() {
   return (
@@ -5,7 +7,7 @@ export default function Header() {
       <div className="home__bg">
         <div className="header d__flex align__items__center pxy__30">
           <div className="logo">
-            <img src="/img/logo.png" alt="logo" />
+            <Image alt="logo" src={logo} />
           </div>
           <div className='navigation pxy__30'>
             <ul className='navbar d__flex'>
