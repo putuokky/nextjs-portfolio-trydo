@@ -35,6 +35,9 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      {/* UP TO TOP BTN */}
+      <div className="up__to__top__btn"></div>
     </div>
   )
 }
