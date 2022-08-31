@@ -1,7 +1,7 @@
 
 export default function Service() {
   return (
-    <div className="service component__space">
+    <div className="service component__space" id="Services">
       <div className="heading">
         <h1 className="heading">My Awesome Service</h1>
         <p className="heading p__color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, hic.</p>

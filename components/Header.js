@@ -2,8 +2,14 @@ import Image from "next/image";
 import logo from "../public/img/logo.png";
 
 export default function Header() {
+  // fixed header
+  // window.addEventListener("scroll", function () {
+  //   const header = document.querySelector(".header");
+  //   header.classList.toggle("active", window.scrollY > 0)
+  // });
+
   return (
-    <div className="home">
+    <div className="home" id="Home">
       <div className="home__bg">
         <div className="header d__flex align__items__center pxy__30">
           <div className="logo">

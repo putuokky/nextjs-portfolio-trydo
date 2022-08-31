@@ -5,7 +5,7 @@ import blog3 from "../public/img/blog-03.jpg";
 
 export default function Blog() {
   return (
-    <div className="blog component__space">
+    <div className="blog component__space" id="Blog">
       <div className="heading">
         <h1 className="heading">My Latest News</h1>
         <p className="heading p__color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, hic.</p>

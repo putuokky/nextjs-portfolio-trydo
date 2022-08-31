@@ -6,7 +6,7 @@ import project4 from "../public/img/portfolio-4.jpg";
 
 export default function Project() {
   return (
-    <div className="project component__space">
+    <div className="project component__space" id="Portfolio">
       <div className="heading">
         <h1 className="heading">My Latest Project</h1>
         <p className="heading p__color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, hic.</p>

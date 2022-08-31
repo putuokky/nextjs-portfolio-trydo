@@ -1,9 +1,17 @@
 import Image from "next/image";
 import about from '../public/img/about.jpg'
+import { BsChevronUp } from "react-icons/bs";
+import { useEffect } from "react";
 
 export default function About() {
+  // up to top button
+  // window.addEventListener("scroll", function () {
+  //   const upToTop = document.querySelector("a.bottom__to__top");
+  //   upToTop.classList.toggle("active", window.scrollY > 0)
+  // });
+
   return (
-    <div className="about component__space">
+    <div className="about component__space" id="About">
       <div className="container">
         <div className="row">
           <div className="col__2">
@@ -37,7 +45,11 @@ export default function About() {
       </div>
 
       {/* UP TO TOP BTN */}
-      <div className="up__to__top__btn"></div>
+      <div className="up__to__top__btn">
+        <a href="#" className="bottom__to__top">
+          <BsChevronUp className="white" />
+        </a>
+      </div>
     </div>
   )
 }
