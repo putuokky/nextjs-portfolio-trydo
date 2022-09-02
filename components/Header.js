@@ -1,5 +1,7 @@
 import Image from "next/image";
 import logo from "../public/img/logo.png";
+import { AiOutlineMenu } from 'react-icons/ai'
+import { useState } from "react";
 
 export default function Header() {
   // fixed header
@@ -8,9 +10,12 @@ export default function Header() {
   //   header.classList.toggle("active", window.scrollY > 0)
   // });
 
+  // Toggle Menu
+  const [show, setShow] = useState(true);
+
   return (
-    <div className="home" id="Home">
-      <div className="home__bg">
+    <section className="home" id="Home">
+      <div className="bg-cover bg-no-repeat bg-tema bg-hero-pattern">
         <div className="header d__flex align__items__center pxy__30">
           <div className="logo">
             <Image alt="logo" src={logo} />
@@ -37,6 +42,34 @@ export default function Header() {
               </a>
             </ul>
           </div>
+          {/* Toggle Menu */}
+          <div className="toggle__menu">
+            <AiOutlineMenu onClick={() => setShow(!show)} className="white pointer" />
+            {show ? (
+              <div className="sideNavbar">
+                <ul className="sidebar d__flex">
+                  <li className="sideNavbar">
+                    <a href="#">Home</a>
+                  </li>
+                  <li className="sideNavbar">
+                    <a href="#">About</a>
+                  </li>
+                  <li className="sideNavbar">
+                    <a href="#">Services</a>
+                  </li>
+                  <li className="sideNavbar">
+                    <a href="#">Portfolio</a>
+                  </li>
+                  <li className="sideNavbar">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li className="sideNavbar">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            ) : null}
+          </div>
         </div>
         {/* Home Content */}
         <div className="container">
@@ -58,6 +91,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
