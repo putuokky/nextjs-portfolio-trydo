@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap");
 
 @layer base {
   * {
-    @apply p-0 m-0 box-border outline-none;
+    @apply box-border p-0 m-0 outline-none;
   }
   a {
-    @apply no-underline text-white;
+    @apply text-white no-underline;
   }
   h1,
   h2,
@@ -18,8 +19,7 @@
   h5,
   h6,
   span {
-    @apply text-lg text-white;
-    font-family: Poppins, sans-serif;
+    @apply text-lg text-white font-poppins;
   }
   li {
     @apply overflow-hidden;
@@ -28,16 +28,15 @@
     @apply block;
   }
   p {
-    @apply text-base;
-    font-family: Poppins, sans-serif;
+    @apply text-base font-poppins;
   }
   svg {
     @apply stroke-1;
   }
   strong {
-    @apply text-primary font-semibold;
+    @apply font-semibold text-primary;
   }
   input {
-    @apply text-[#c6c9d8bf];
+    @apply text-more;
   }
 }

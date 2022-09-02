@@ -14,36 +14,36 @@ export default function Header() {
   const [show, setShow] = useState(true);
 
   return (
-    <section className="home" id="Home">
-      <div className="bg-cover bg-no-repeat bg-tema bg-hero-pattern">
-        <div className="header d__flex align__items__center pxy__30">
-          <div className="logo">
+    <header id="home">
+      <div className="bg-no-repeat bg-cover bg-[50%] bg-tema bg-hero">
+        <div className="flex items-center transition duration-500 ease-in-out p-[30px]">
+          <div>
             <Image alt="logo" src={logo} />
           </div>
-          <div className='navigation pxy__30'>
-            <ul className='navbar d__flex'>
+          <nav className='flex p-[30px]'>
+            <ul className='flex navbar'>
               <a href='#Home'>
-                <li className='nav__items mx__15'>Home</li>
+                <li className='pb-4 mx-4 text-lg'>Home</li>
               </a>
               <a href='#About'>
-                <li className='nav__items mx__15'>About</li>
+                <li className='pb-4 mx-4 text-lg'>About</li>
               </a>
               <a href='#Services'>
-                <li className='nav__items mx__15'>Services</li>
+                <li className='pb-4 mx-4 text-lg'>Services</li>
               </a>
               <a href='#Portfolio'>
-                <li className='nav__items mx__15'>Portfolio</li>
+                <li className='pb-4 mx-4 text-lg'>Portfolio</li>
               </a>
               <a href='#Blog'>
-                <li className='nav__items mx__15'>Blog</li>
+                <li className='pb-4 mx-4 text-lg'>Blog</li>
               </a>
               <a href='#Contact'>
-                <li className='nav__items mx__15'>Contact</li>
+                <li className='pb-4 mx-4 text-lg'>Contact</li>
               </a>
             </ul>
-          </div>
+          </nav>
           {/* Toggle Menu */}
-          <div className="toggle__menu">
+          {/* <div className="toggle__menu">
             <AiOutlineMenu onClick={() => setShow(!show)} className="white pointer" />
             {show ? (
               <div className="sideNavbar">
@@ -69,28 +69,28 @@ export default function Header() {
                 </ul>
               </div>
             ) : null}
-          </div>
+          </div> */}
         </div>
         {/* Home Content */}
-        <div className="container">
-          <div className="home__content">
+        <div className="container w-11/12 mx-auto">
+          <div className="py-32">
             <div className="home__meta">
-              <h1 className="home__text pz__10">
+              <h1 className="text-lg font-normal tracking-[.1875em] text-more py-2.5">
                 WELCOME TO MY WORLD
               </h1>
-              <h2 className="home__text pz__10">
+              <h2 className="text-[54px] font-extrabold font-montserrat leading-[54px] py-2.5">
                 Hi,I'm John Doe
               </h2>
-              <h3 className="home__text sweet pz__10">
+              <h3 className="text-5xl font-extrabold font-montserrat leading-10 text-primary py-2.5">
                 JS Developer
               </h3>
-              <h4 className="home__text pz__10">
+              <h4 className="text-5xl font-extrabold font-montserrat leading-10 py-2.5">
                 based in USA
               </h4>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
   )
 }

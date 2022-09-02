@@ -8,7 +8,7 @@ import Service from "@components/Service";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <About />
       <Service />
@@ -16,6 +16,6 @@ export default function Home() {
       <Blog />
       <Contact />
       <Footer />
-    </div>
+    </>
   )
 }
