@@ -24,7 +24,7 @@ export default function About() {
             <h1 className="mb-2.5 font-bold text-start font-montserrat text-6xl">
               About Me
             </h1>
-            <div className="about__meta">
+            <article>
               <p className="mb-4 text-lg leading-7 text-more font-poppins">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint deleniti adipisci asperiores cum ad soluta. Itaque tenetur id, laborum, ab voluptatum nulla quidem omnis doloribus nemo quo dolorem vel vero illo nobis cupiditate, dignissimos quasi suscipit. Cum nostrum distinctio maxime?
               </p>
@@ -37,16 +37,16 @@ export default function About() {
               <div className="flex items-center py-5">
                 <Link href="#">
                   <a>
-                    <button className="w-48 rounded-md text-lg capitalize transition duration-500 ease-in border-2 border-solid h-14 border-primary mx-2.5 bg-primary text-white font-medium hover:bg-white hover:text-primary">Download CV</button>
+                    <button className="w-48 rounded-md text-lg capitalize transition duration-300 ease-in border-2 border-solid h-14 border-primary mx-2.5 bg-primary text-white font-medium hover:bg-white hover:text-primary">Download CV</button>
                   </a>
                 </Link>
                 <Link href="#">
                   <a>
-                    <button className="w-48 rounded-md text-lg capitalize transition duration-500 ease-in border-2 border-solid h-14 border-primary mx-2.5 bg-primary text-white font-medium hover:bg-white hover:text-primary">Hire Me</button>
+                    <button className="w-48 rounded-md text-lg capitalize transition duration-300 ease-in border-2 border-solid h-14 border-primary mx-2.5 bg-primary text-white font-medium hover:bg-white hover:text-primary">Hire Me</button>
                   </a>
                 </Link>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>

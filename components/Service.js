@@ -13,7 +13,7 @@ export default function Service() {
           <div className="flex flex-col justify-center w-1/3 p-5 mt-5">
             <div className="w-full transition ease-linear rounded-lg cursor-pointer bg-tema-second p-14 hover:origin-center hover:bg-gradient-to-r hover:from-primary hover:to-secondary">
               <div>
-                <FiUsers className='mb-6 text-5xl font-normal text-white' />
+                <FiUsers className='inline-flex mb-6 text-5xl font-normal text-white' />
               </div>
               <article>
                 <h1 className="text-lg font-poppins py-2.5">Business Strategy</h1>
