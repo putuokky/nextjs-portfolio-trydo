@@ -36,7 +36,8 @@
   strong {
     @apply font-semibold text-primary;
   }
-  input {
+  input,
+  textarea {
     @apply text-more;
   }
 }
